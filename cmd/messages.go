@@ -62,7 +62,3 @@ func MessageGet(blockID string) error {
 	output(res)
 	return nil
 }
-
-func MessageIgnore(blockID string) error {
-	return BlockIgnore(blockID)
-}

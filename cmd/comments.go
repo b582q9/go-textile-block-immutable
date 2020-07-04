@@ -30,7 +30,3 @@ func CommentGet(blockID string) error {
 	output(res)
 	return nil
 }
-
-func CommentIgnore(blockID string) error {
-	return BlockIgnore(blockID)
-}

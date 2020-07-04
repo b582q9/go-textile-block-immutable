@@ -71,13 +71,3 @@ func getBlockMeta(blockID string) (*pb.Block, string, error) {
 	}
 	return &block, res, nil
 }
-
-// Adds new block to the thread to indicate that this block should be ignored, essentially removing the block
-func BlockIgnore(blockID string) error {
-	res, err := executeJsonCmd(http.MethodDelete, "blocks/"+blockID, params{}, nil)
-	if err != nil {
-		return err
-	}
-	output(res)
-	return nil
-}

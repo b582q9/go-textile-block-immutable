@@ -525,11 +525,6 @@ func FileGet(fileHash string, content bool) error {
 }
 
 // ------------------------------------
-// > file ignore
-
-func FileIgnore(blockID string) error {
-	return BlockIgnore(blockID)
-}
 
 // ------------------------------------
 // > files key

@@ -180,13 +180,6 @@ func Run() error {
 		return BlockMeta(*blockMetaBlockID)
 	}
 
-	// block ignore
-	blockIgnoreCmd := blockCmd.Command("ignore", "Remove a block by marking it to be ignored").Alias("remove").Alias("rm")
-	blockIgnoreBlockID := blockIgnoreCmd.Arg("block", "Block ID").Required().String()
-	cmds[blockIgnoreCmd.FullCommand()] = func() error {
-		return BlockIgnore(*blockIgnoreBlockID)
-	}
-
 	// block file alias
 	blockFilesCommand(cmds, blockCmd, []string{"files", "file"})
 
@@ -293,13 +286,6 @@ An access token is required to register, and should be obtained separately from 
 	commentGetBlockID := commentGetCmd.Arg("comment-block", "Comment Block ID").Required().String()
 	cmds[commentGetCmd.FullCommand()] = func() error {
 		return CommentGet(*commentGetBlockID)
-	}
-
-	// comment ignore
-	commentIgnoreCmd := commentCmd.Command("ignore", "Ignore a comment by its own Block ID").Alias("remove").Alias("rm")
-	commentIgnoreBlockID := commentIgnoreCmd.Arg("comment-block", "Comment Block ID").Required().String()
-	cmds[commentIgnoreCmd.FullCommand()] = func() error {
-		return CommentIgnore(*commentIgnoreBlockID)
 	}
 
 	// ================================
@@ -439,13 +425,6 @@ Stacks may include:
 	fileAddVerbose := fileAddCmd.Flag("verbose", "Prints files as they are milled").Short('v').Bool()
 	cmds[fileAddCmd.FullCommand()] = func() error {
 		return FileAdd(*fileAddPath, *fileAddThreadID, *fileAddCaption, *fileAddGroup, *fileAddVerbose)
-	}
-
-	// file ignore
-	fileIgnoreCmd := fileCmd.Command("ignore", `Ignores a thread file by its own block ID`).Alias("remove").Alias("rm")
-	fileIgnoreBlockID := fileIgnoreCmd.Arg("files-block", "Files Block ID").Required().String()
-	cmds[fileIgnoreCmd.FullCommand()] = func() error {
-		return FileIgnore(*fileIgnoreBlockID)
 	}
 
 	// file get
@@ -643,13 +622,6 @@ There are two types of invites, direct account-to-account and external:
 		return LikeGet(*likeGetLikeID)
 	}
 
-	// like ignore
-	likeIgnoreCmd := likeCmd.Command("ignore", "Ignore a like by its own Block ID").Alias("remove").Alias("rm")
-	likeIgnoreLikeID := likeIgnoreCmd.Arg("like-block", "Like Block ID").Required().String()
-	cmds[likeIgnoreCmd.FullCommand()] = func() error {
-		return LikeIgnore(*likeIgnoreLikeID)
-	}
-
 	// ================================
 
 	// log
@@ -688,13 +660,6 @@ There are two types of invites, direct account-to-account and external:
 	messageGetBlockID := messageGetCmd.Arg("message-block", "Message Block ID").String()
 	cmds[messageGetCmd.FullCommand()] = func() error {
 		return MessageGet(*messageGetBlockID)
-	}
-
-	// message ignore
-	messageIgnoreCmd := messageCmd.Command("ignore", "Ignores a message by its own Block ID").Alias("remove").Alias("rm")
-	messageIgnoreBlockID := messageIgnoreCmd.Arg("message-block", "Message Block ID").String()
-	cmds[messageIgnoreCmd.FullCommand()] = func() error {
-		return MessageIgnore(*messageIgnoreBlockID)
 	}
 
 	// ================================

@@ -30,7 +30,3 @@ func LikeGet(likeID string) error {
 	output(res)
 	return nil
 }
-
-func LikeIgnore(likeID string) error {
-	return BlockIgnore(likeID)
-}
