@@ -149,8 +149,6 @@ func (t *Textile) feedItem(block *pb.Block, opts feedItemOpts) (*pb.FeedItem, er
 	switch block.Type {
 	case pb.Block_MERGE:
 		payload, err = t.merge(block, opts)
-	case pb.Block_IGNORE:
-		payload, err = t.ignore(block, opts)
 	case pb.Block_FLAG:
 		payload, err = t.flag(block, opts)
 	case pb.Block_JOIN:
@@ -284,8 +282,6 @@ func GetFeedItemPayload(item *pb.FeedItem) (FeedItemPayload, error) {
 	switch blockType {
 	case pb.Block_MERGE:
 		payload = new(pb.Merge)
-	case pb.Block_IGNORE:
-		payload = new(pb.Ignore)
 	case pb.Block_FLAG:
 		payload = new(pb.Flag)
 	case pb.Block_JOIN:
