@@ -184,7 +184,7 @@ func (m *Mobile) refreshCafeSession(id string) ([]byte, error) {
 	return proto.Marshal(session)
 }
 
-// DeegisterCafe is the async flavor of deregisterCafe
+// DeregisterCafe is the async flavor of deregisterCafe
 func (m *Mobile) DeregisterCafe(id string, cb Callback) {
 	m.node.WaitAdd(1, "Mobile.DeregisterCafe")
 	go func() {

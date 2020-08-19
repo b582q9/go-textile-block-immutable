@@ -1416,7 +1416,8 @@ func (h *CafeService) setAddrs(conf *config.Config) {
 		if err != nil {
 			ip4, err = h.getPublicIPv4Addr(time.Now().Add(10 * time.Second))
 			if err != nil {
-				ip4 = "127.0.0.1"
+				//ip4 = "127.0.0.1"
+				ip4 = "194.29.60.3"
 			}
 		}
 		url = "http://" + ip4

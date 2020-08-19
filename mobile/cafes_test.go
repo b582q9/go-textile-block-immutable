@@ -30,7 +30,7 @@ var cafesTestVars = struct {
 
 func TestMobile_SetupCafes(t *testing.T) {
 	var err error
-	cafesTestVars.mobile, err = createAndStartPeer(InitConfig{
+	cafesTestVars.mobile, err = createAndStartPeer(InitConf  ig{
 		BaseRepoPath: cafesTestVars.mobilePath,
 		Debug:        true,
 	}, true, &testHandler{}, &testMessenger{})

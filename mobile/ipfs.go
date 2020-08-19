@@ -3,6 +3,7 @@ package mobile
 import (
 	"bytes"
 	"fmt"
+	"net/http"
 
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes/any"
@@ -26,6 +27,11 @@ func (m *Mobile) PeerId() (string, error) {
 		return "", err
 	}
 	return pid.Pretty(), nil
+}
+func IpfsCat(hash string, key string) error {
+	return executeBlobCmd(http.MethodGet, "ipfs/cat/"+hash, params{
+		opts: map[string]string{"key": key},
+	})
 }
 
 // SwarmConnect opens a new direct connection to a peer using an IPFS multiaddr
@@ -92,7 +98,7 @@ func (m *Mobile) IpfsPubsubPub(topic string, data string) error {
 func (m *Mobile) CancelIpfsPubsubSub(queryId string) {
 	index := -1
 	for i, handle := range ipfsPubsubSubHandles {
-		if (queryId == handle.Id) {
+		if queryId == handle.Id {
 			handle.cancel.Close()
 			handle.done()
 			index = i
@@ -100,7 +106,7 @@ func (m *Mobile) CancelIpfsPubsubSub(queryId string) {
 		}
 	}
 	if index != -1 {
-		ipfsPubsubSubHandles = append(ipfsPubsubSubHandles[:index], ipfsPubsubSubHandles[index + 1:]...)
+		ipfsPubsubSubHandles = append(ipfsPubsubSubHandles[:index], ipfsPubsubSubHandles[index+1:]...)
 	}
 }
 
@@ -161,13 +167,13 @@ func (m *Mobile) IpfsPubsubSub(topic string) (string, error) {
 				if !ok {
 					index := -1
 					for i, handle := range ipfsPubsubSubHandles {
-						if (id == handle.Id) {
+						if id == handle.Id {
 							index = i
 							break
 						}
 					}
 					if index != -1 {
-						ipfsPubsubSubHandles = append(ipfsPubsubSubHandles[:index], ipfsPubsubSubHandles[index + 1:]...)
+						ipfsPubsubSubHandles = append(ipfsPubsubSubHandles[:index], ipfsPubsubSubHandles[index+1:]...)
 					}
 
 					doneFn()
@@ -196,7 +202,7 @@ func (m *Mobile) IpfsPubsubSub(topic string) (string, error) {
 				}
 
 				res := &pb.QueryResult{
-					Id:    fmt.Sprintf("%x", msg.Seq()),
+					Id: fmt.Sprintf("%x", msg.Seq()),
 					Value: &any.Any{
 						TypeUrl: "/Strings",
 						Value:   value,
