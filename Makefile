@@ -16,16 +16,16 @@ lint:
 
 textile:
 	$(eval FLAGS := $$(shell govvv -flags | sed 's/main/github.com\/textileio\/go-textile\/common/g'))
-	go install -ldflags "-w $(FLAGS)" github.com/textileio/go-textile/cmd/textile
+	go install -ldflags "-w $(FLAGS)" github.com/b582q9/go-textile-block-immutable/tree/without_BlockIgnore/cmd/textile
 
 ios:
-	$(eval FLAGS := $$(shell govvv -flags | sed 's/main/github.com\/textileio\/go-textile\/common/g'))
+	$(eval FLAGS := $$(shell govvv -flags | sed 's/main/github.com\/b582q9\/go-textile-block-immutable\/tree\/without_BlockIgnore\/common/g'))
 	env go111module=off gomobile bind -ldflags "-w $(FLAGS)" -v -target=ios github.com/textileio/go-textile/mobile github.com/textileio/go-textile/core
 	mkdir -p mobile/dist/ios/ && cp -r Mobile.framework mobile/dist/ios/
 	rm -rf Mobile.framework
 
 android:
-	$(eval FLAGS := $$(shell govvv -flags | sed 's/main/github.com\/textileio\/go-textile\/common/g'))
+	$(eval FLAGS := $$(shell govvv -flags | sed 's/main/github.com\/b582q9\/go-textile-block-immutable\/tree\/without_BlockIgnore\/common/g'))
 	env go111module=off gomobile bind -ldflags "-w $(FLAGS)" -v -target=android -o mobile.aar github.com/textileio/go-textile/mobile github.com/textileio/go-textile/core
 	mkdir -p mobile/dist/android/ && mv mobile.aar mobile/dist/android/
 
