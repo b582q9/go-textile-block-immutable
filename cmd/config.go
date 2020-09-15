@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/textileio/go-textile/util"
+	"github.com/b582q9/go-textile-block-immutable/util"
 )
 
 func Config(name string, value string) error {

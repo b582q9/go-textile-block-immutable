@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"sync"
 
+	"github.com/b582q9/go-textile-block-immutable/ipfs"
+	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-block-immutable/repo"
 	"github.com/golang/protobuf/proto"
 	"github.com/ipfs/go-ipfs/core"
 	"github.com/libp2p/go-libp2p-core/peer"
-	"github.com/textileio/go-textile/ipfs"
-	"github.com/textileio/go-textile/pb"
-	"github.com/textileio/go-textile/repo"
 )
 
 // cafeInFlushGroupSize is the size of concurrently processed messages

@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/golang/protobuf/ptypes"
 	libp2pc "github.com/libp2p/go-libp2p-core/crypto"
 	peer "github.com/libp2p/go-libp2p-core/peer"
 	protocol "github.com/libp2p/go-libp2p-core/protocol"
 	"github.com/segmentio/ksuid"
-	"github.com/textileio/go-textile/pb"
 )
 
 var ErrClaimsInvalid = fmt.Errorf("claims invalid")

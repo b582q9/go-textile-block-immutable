@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/textileio/go-textile/pb"
-	"github.com/textileio/go-textile/util"
+	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-block-immutable/util"
 )
 
 func ObserveCommand(threadID string, types []string) error {

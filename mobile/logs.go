@@ -1,8 +1,8 @@
 package mobile
 
 import (
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	"github.com/golang/protobuf/proto"
-	"github.com/textileio/go-textile/pb"
 )
 
 // SetLogLevel calls core SetLogLevel

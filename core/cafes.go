@@ -3,10 +3,10 @@ package core
 import (
 	"fmt"
 
+	"github.com/b582q9/go-textile-block-immutable/ipfs"
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	cid "github.com/ipfs/go-cid"
 	peer "github.com/libp2p/go-libp2p-core/peer"
-	"github.com/textileio/go-textile/ipfs"
-	"github.com/textileio/go-textile/pb"
 )
 
 // RegisterCafe registers this account with another peer (the "cafe"),

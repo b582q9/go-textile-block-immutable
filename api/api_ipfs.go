@@ -6,15 +6,15 @@ import (
 	"io/ioutil"
 	"net/http"
 
+	"github.com/b582q9/go-textile-block-immutable/crypto"
+	"github.com/b582q9/go-textile-block-immutable/ipfs"
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	"github.com/gin-gonic/gin"
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes/any"
 	iface "github.com/ipfs/interface-go-ipfs-core"
 	"github.com/mr-tron/base58/base58"
 	"github.com/segmentio/ksuid"
-	"github.com/textileio/go-textile/crypto"
-	"github.com/textileio/go-textile/ipfs"
-	"github.com/textileio/go-textile/pb"
 )
 
 // ipfsId godoc
@@ -252,7 +252,7 @@ func (a *Api) ipfsPubsubSub(g *gin.Context) {
 			}
 
 			res := &pb.QueryResult{
-				Id:    fmt.Sprintf("%x", msg.Seq()),
+				Id: fmt.Sprintf("%x", msg.Seq()),
 				Value: &any.Any{
 					// Can't let TypeUrl to use ipfs official "/pubsub.pb.Message"
 					// from github.com/libp2p/go-libp2p-pubsub/pb/rpc.pb.go ,

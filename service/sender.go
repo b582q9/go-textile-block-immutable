@@ -6,12 +6,12 @@ import (
 	"sync"
 	"time"
 
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	"github.com/golang/protobuf/proto"
 	"github.com/libp2p/go-libp2p-core/helpers"
 	inet "github.com/libp2p/go-libp2p-core/network"
 	"github.com/libp2p/go-libp2p-core/peer"
 	"github.com/libp2p/go-msgio"
-	"github.com/textileio/go-textile/pb"
 )
 
 func (srv *Service) updateFromMessage(ctx context.Context, p peer.ID) error {

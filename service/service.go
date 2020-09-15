@@ -12,6 +12,11 @@ import (
 	"sync"
 	"time"
 
+	"github.com/b582q9/go-textile-block-immutable/crypto"
+	"github.com/b582q9/go-textile-block-immutable/ipfs"
+	"github.com/b582q9/go-textile-block-immutable/keypair"
+	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-block-immutable/util"
 	ggio "github.com/gogo/protobuf/io"
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
@@ -23,11 +28,6 @@ import (
 	peer "github.com/libp2p/go-libp2p-core/peer"
 	protocol "github.com/libp2p/go-libp2p-core/protocol"
 	"github.com/libp2p/go-msgio"
-	"github.com/textileio/go-textile/crypto"
-	"github.com/textileio/go-textile/ipfs"
-	"github.com/textileio/go-textile/keypair"
-	"github.com/textileio/go-textile/pb"
-	"github.com/textileio/go-textile/util"
 )
 
 var log = logging.Logger("tex-service")

@@ -10,10 +10,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/b582q9/go-textile-block-immutable/keypair"
+	"github.com/b582q9/go-textile-block-immutable/strkey"
 	native "github.com/ipfs/go-ipfs-config"
 	_ "github.com/mutecomm/go-sqlcipher"
-	"github.com/textileio/go-textile/keypair"
-	"github.com/textileio/go-textile/strkey"
 )
 
 type contact struct {

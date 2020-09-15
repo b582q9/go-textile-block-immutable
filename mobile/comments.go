@@ -1,6 +1,6 @@
 package mobile
 
-import "github.com/textileio/go-textile/core"
+import "github.com/b582q9/go-textile-block-immutable/core"
 
 // AddComment adds a comment targeted at the given block
 func (m *Mobile) AddComment(blockId string, body string) (string, error) {

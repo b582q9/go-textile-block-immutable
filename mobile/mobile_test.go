@@ -10,11 +10,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-block-immutable/util"
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
 	"github.com/segmentio/ksuid"
-	"github.com/textileio/go-textile/pb"
-	"github.com/textileio/go-textile/util"
 )
 
 var testVars = struct {

@@ -7,7 +7,7 @@ import (
 	"os"
 	"path"
 
-	"github.com/textileio/go-textile/common"
+	"github.com/b582q9/go-textile-block-immutable/common"
 )
 
 // Config is used to load textile config files.

@@ -4,9 +4,9 @@ import (
 	"io/ioutil"
 	"net/http"
 
+	"github.com/b582q9/go-textile-block-immutable/core"
+	m "github.com/b582q9/go-textile-block-immutable/mill"
 	"github.com/gin-gonic/gin"
-	"github.com/textileio/go-textile/core"
-	m "github.com/textileio/go-textile/mill"
 )
 
 // schemaMill godoc

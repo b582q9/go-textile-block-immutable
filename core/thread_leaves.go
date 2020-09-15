@@ -3,8 +3,8 @@ package core
 import (
 	"fmt"
 
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	mh "github.com/multiformats/go-multihash"
-	"github.com/textileio/go-textile/pb"
 )
 
 // leave creates an outgoing leave block

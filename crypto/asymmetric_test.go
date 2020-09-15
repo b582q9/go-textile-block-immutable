@@ -4,8 +4,8 @@ import (
 	"encoding/hex"
 	"testing"
 
+	. "github.com/b582q9/go-textile-block-immutable/crypto"
 	libp2pc "github.com/libp2p/go-libp2p-core/crypto"
-	. "github.com/textileio/go-textile/crypto"
 )
 
 func TestEncryptCurve25519(t *testing.T) {

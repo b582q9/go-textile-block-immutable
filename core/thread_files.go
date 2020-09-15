@@ -6,6 +6,12 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/b582q9/go-textile-block-immutable/crypto"
+	"github.com/b582q9/go-textile-block-immutable/ipfs"
+	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-block-immutable/repo/db"
+	"github.com/b582q9/go-textile-block-immutable/schema"
+	"github.com/b582q9/go-textile-block-immutable/util"
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/ptypes"
 	icid "github.com/ipfs/go-cid"
@@ -13,12 +19,6 @@ import (
 	"github.com/mr-tron/base58/base58"
 	mh "github.com/multiformats/go-multihash"
 	"github.com/segmentio/ksuid"
-	"github.com/textileio/go-textile/crypto"
-	"github.com/textileio/go-textile/ipfs"
-	"github.com/textileio/go-textile/pb"
-	"github.com/textileio/go-textile/repo/db"
-	"github.com/textileio/go-textile/schema"
-	"github.com/textileio/go-textile/util"
 	"github.com/xeipuuv/gojsonschema"
 )
 

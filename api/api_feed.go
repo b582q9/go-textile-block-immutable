@@ -5,9 +5,9 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/b582q9/go-textile-block-immutable/core"
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	"github.com/gin-gonic/gin"
-	"github.com/textileio/go-textile/core"
-	"github.com/textileio/go-textile/pb"
 )
 
 // lsThreadFeed godoc

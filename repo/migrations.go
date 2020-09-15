@@ -6,7 +6,7 @@ import (
 	"path"
 	"strconv"
 
-	m "github.com/textileio/go-textile/repo/migrations"
+	m "github.com/b582q9/go-textile-block-immutable/repo/migrations"
 )
 
 // Migration performs minor up and down migrations

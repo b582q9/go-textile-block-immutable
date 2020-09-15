@@ -5,20 +5,20 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/b582q9/go-textile-block-immutable/broadcast"
+	"github.com/b582q9/go-textile-block-immutable/ipfs"
+	"github.com/b582q9/go-textile-block-immutable/keypair"
+	"github.com/b582q9/go-textile-block-immutable/mill"
+	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-block-immutable/repo/db"
+	"github.com/b582q9/go-textile-block-immutable/schema/textile"
+	"github.com/b582q9/go-textile-block-immutable/util"
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
 	"github.com/golang/protobuf/ptypes/any"
 	libp2pc "github.com/libp2p/go-libp2p-core/crypto"
 	peer "github.com/libp2p/go-libp2p-core/peer"
 	mh "github.com/multiformats/go-multihash"
-	"github.com/textileio/go-textile/broadcast"
-	"github.com/textileio/go-textile/ipfs"
-	"github.com/textileio/go-textile/keypair"
-	"github.com/textileio/go-textile/mill"
-	"github.com/textileio/go-textile/pb"
-	"github.com/textileio/go-textile/repo/db"
-	"github.com/textileio/go-textile/schema/textile"
-	"github.com/textileio/go-textile/util"
 )
 
 // ErrThreadNotFound indicates thread is not found in the loaded list

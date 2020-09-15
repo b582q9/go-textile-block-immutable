@@ -5,8 +5,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/textileio/go-textile/pb"
-	"github.com/textileio/go-textile/repo"
+	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-block-immutable/repo"
 )
 
 var botStore repo.Botstore

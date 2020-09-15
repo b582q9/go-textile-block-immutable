@@ -4,14 +4,14 @@ Textile's HTTP REST API Documentation
 ## Version: 0
 
 ### Terms of service
-https://github.com/textileio/go-textile/blob/master/TERMS
+https://github.com/b582q9/go-textile-block-immutable/blob/master/TERMS
 
 **Contact information:**  
 Textile  
 https://textile.io/  
 contact@textile.io  
 
-**License:** [MIT License](https://github.com/textileio/go-textile/blob/master/LICENSE)
+**License:** [MIT License](https://github.com/b582q9/go-textile-block-immutable/blob/master/LICENSE)
 
 ### Security
 **BasicAuth**  

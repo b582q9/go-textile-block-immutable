@@ -3,7 +3,7 @@ package core
 import (
 	"fmt"
 
-	"github.com/textileio/go-textile/pb"
+	"github.com/b582q9/go-textile-block-immutable/pb"
 )
 
 // ErrBlockNotFound indicates a block was not found in the index

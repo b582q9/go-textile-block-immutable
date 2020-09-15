@@ -6,12 +6,12 @@ import (
 	"testing"
 	"time"
 
+	"github.com/b582q9/go-textile-block-immutable/ipfs"
+	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-block-immutable/schema/textile"
 	icid "github.com/ipfs/go-cid"
 	"github.com/libp2p/go-libp2p-core/peerstore"
 	"github.com/segmentio/ksuid"
-	"github.com/textileio/go-textile/ipfs"
-	"github.com/textileio/go-textile/pb"
-	"github.com/textileio/go-textile/schema/textile"
 )
 
 var cafeVars = struct {

@@ -3,11 +3,11 @@ package mobile
 import (
 	"os"
 
-	"github.com/textileio/go-textile/wallet"
+	"github.com/b582q9/go-textile-block-immutable/wallet"
 
+	"github.com/b582q9/go-textile-block-immutable/core"
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	"github.com/gogo/protobuf/proto"
-	"github.com/textileio/go-textile/core"
-	"github.com/textileio/go-textile/pb"
 )
 
 func createAndStartPeer(conf InitConfig, wait bool, handler core.CafeOutboxHandler, messenger Messenger) (*Mobile, error) {

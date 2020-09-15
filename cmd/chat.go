@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/b582q9/go-textile-block-immutable/core"
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	"github.com/chzyer/readline"
 	"github.com/golang/protobuf/ptypes"
-	"github.com/textileio/go-textile/core"
-	"github.com/textileio/go-textile/pb"
 )
 
 func Chat(threadID string) error {

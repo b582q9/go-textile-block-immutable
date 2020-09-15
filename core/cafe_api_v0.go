@@ -8,14 +8,14 @@ import (
 	"io"
 	"net/http"
 
+	"github.com/b582q9/go-textile-block-immutable/ipfs"
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/render"
 	"github.com/golang/protobuf/proto"
 	cid "github.com/ipfs/go-cid"
 	uio "github.com/ipfs/go-unixfs/io"
 	peer "github.com/libp2p/go-libp2p-core/peer"
-	"github.com/textileio/go-textile/ipfs"
-	"github.com/textileio/go-textile/pb"
 )
 
 // pin take raw data or a tarball and pins it to the local ipfs node.

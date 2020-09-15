@@ -4,9 +4,9 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/b582q9/go-textile-block-immutable/ipfs"
+	. "github.com/b582q9/go-textile-block-immutable/jwt"
 	"github.com/dgrijalva/jwt-go"
-	"github.com/textileio/go-textile/ipfs"
-	. "github.com/textileio/go-textile/jwt"
 )
 
 var publicKey = "CAESIP1G8uGFpX+iduqgJfKLt0nw870MI9ydHcKg9gDIr5Tb"

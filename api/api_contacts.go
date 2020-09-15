@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"strconv"
 
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	"github.com/gin-gonic/gin"
-	"github.com/textileio/go-textile/pb"
 )
 
 // addContacts godoc

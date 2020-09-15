@@ -4,9 +4,9 @@ import (
 	"io"
 	"net/http"
 
+	"github.com/b582q9/go-textile-block-immutable/broadcast"
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	"github.com/gin-gonic/gin"
-	"github.com/textileio/go-textile/broadcast"
-	"github.com/textileio/go-textile/pb"
 )
 
 func handleSearchStream(g *gin.Context, resultCh <-chan *pb.QueryResult, errCh <-chan error, cancel *broadcast.Broadcaster, events bool) {

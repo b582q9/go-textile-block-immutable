@@ -3,10 +3,10 @@ package mobile
 import (
 	"fmt"
 
+	"github.com/b582q9/go-textile-block-immutable/core"
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	"github.com/golang/protobuf/proto"
 	"github.com/segmentio/ksuid"
-	"github.com/textileio/go-textile/core"
-	"github.com/textileio/go-textile/pb"
 )
 
 // Address returns account address

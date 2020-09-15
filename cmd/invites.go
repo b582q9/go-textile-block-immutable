@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	"github.com/golang/protobuf/ptypes"
-	"github.com/textileio/go-textile/pb"
 )
 
 func InviteCreate(threadID string, address string, wait int) error {

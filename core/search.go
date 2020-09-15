@@ -3,10 +3,10 @@ package core
 import (
 	"sync"
 
+	"github.com/b582q9/go-textile-block-immutable/broadcast"
+	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-block-immutable/util"
 	"github.com/segmentio/ksuid"
-	"github.com/textileio/go-textile/broadcast"
-	"github.com/textileio/go-textile/pb"
-	"github.com/textileio/go-textile/util"
 )
 
 // queryResultSet holds a unique set of search results

@@ -9,6 +9,13 @@ import (
 	"strings"
 	"time"
 
+	"github.com/b582q9/go-textile-block-immutable/bots"
+	"github.com/b582q9/go-textile-block-immutable/core"
+	"github.com/b582q9/go-textile-block-immutable/crypto"
+	"github.com/b582q9/go-textile-block-immutable/gateway/static/css"
+	"github.com/b582q9/go-textile-block-immutable/gateway/templates"
+	"github.com/b582q9/go-textile-block-immutable/ipfs"
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	"github.com/gin-contrib/location"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/render"
@@ -20,13 +27,6 @@ import (
 	peer "github.com/libp2p/go-libp2p-core/peer"
 	"github.com/mr-tron/base58/base58"
 	gincors "github.com/rs/cors/wrapper/gin"
-	"github.com/textileio/go-textile/bots"
-	"github.com/textileio/go-textile/core"
-	"github.com/textileio/go-textile/crypto"
-	"github.com/textileio/go-textile/gateway/static/css"
-	"github.com/textileio/go-textile/gateway/templates"
-	"github.com/textileio/go-textile/ipfs"
-	"github.com/textileio/go-textile/pb"
 )
 
 var log = logging.Logger("tex-gateway")

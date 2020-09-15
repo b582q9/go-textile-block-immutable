@@ -3,9 +3,9 @@ package mobile
 import (
 	"fmt"
 
+	"github.com/b582q9/go-textile-block-immutable/core"
 	"github.com/golang/protobuf/proto"
 	mh "github.com/multiformats/go-multihash"
-	"github.com/textileio/go-textile/core"
 )
 
 // Profile calls core Profile

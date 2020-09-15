@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/textileio/go-textile/cmd"
+	"github.com/b582q9/go-textile-block-immutable/cmd"
 )
 
 func main() {

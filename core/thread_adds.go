@@ -1,10 +1,10 @@
 package core
 
 import (
+	"github.com/b582q9/go-textile-block-immutable/crypto"
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	peer "github.com/libp2p/go-libp2p-core/peer"
 	mh "github.com/multiformats/go-multihash"
-	"github.com/textileio/go-textile/crypto"
-	"github.com/textileio/go-textile/pb"
 )
 
 // AddInvite creates an outgoing add block, which is sent directly to the recipient

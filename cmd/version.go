@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/textileio/go-textile/common"
+	"github.com/b582q9/go-textile-block-immutable/common"
 )
 
 func Version(git bool) error {

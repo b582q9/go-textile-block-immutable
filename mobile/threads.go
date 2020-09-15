@@ -3,10 +3,10 @@ package mobile
 import (
 	"crypto/rand"
 
+	"github.com/b582q9/go-textile-block-immutable/core"
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	"github.com/golang/protobuf/proto"
 	libp2pc "github.com/libp2p/go-libp2p-core/crypto"
-	"github.com/textileio/go-textile/core"
-	"github.com/textileio/go-textile/pb"
 )
 
 // AddThread adds a new thread with the given name

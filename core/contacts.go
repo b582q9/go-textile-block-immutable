@@ -3,11 +3,11 @@ package core
 import (
 	"fmt"
 
+	"github.com/b582q9/go-textile-block-immutable/broadcast"
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
 	"github.com/golang/protobuf/ptypes/any"
-	"github.com/textileio/go-textile/broadcast"
-	"github.com/textileio/go-textile/pb"
 )
 
 // AddContact adds or updates a card

@@ -512,8 +512,8 @@ info:
   description: Textile's HTTP REST API Documentation
   license:
     name: MIT License
-    url: https://github.com/textileio/go-textile/blob/master/LICENSE
-  termsOfService: https://github.com/textileio/go-textile/blob/master/TERMS
+    url: https://github.com/b582q9/go-textile-block-immutable/blob/master/LICENSE
+  termsOfService: https://github.com/b582q9/go-textile-block-immutable/blob/master/TERMS
   title: Textile REST API
   version: "0"
 paths:

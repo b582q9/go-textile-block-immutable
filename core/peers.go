@@ -3,9 +3,9 @@ package core
 import (
 	"fmt"
 
-	"github.com/textileio/go-textile/ipfs"
-	"github.com/textileio/go-textile/pb"
-	"github.com/textileio/go-textile/util"
+	"github.com/b582q9/go-textile-block-immutable/ipfs"
+	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-block-immutable/util"
 )
 
 // PeerUser returns a user object with the most recently updated contact for the given id

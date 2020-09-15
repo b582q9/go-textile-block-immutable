@@ -4,10 +4,10 @@ import (
 	"encoding/hex"
 	"fmt"
 
+	"github.com/b582q9/go-textile-block-immutable/crypto"
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	"github.com/golang/protobuf/ptypes"
 	"github.com/mr-tron/base58/base58"
-	"github.com/textileio/go-textile/crypto"
-	"github.com/textileio/go-textile/pb"
 	"golang.org/x/crypto/bcrypt"
 )
 

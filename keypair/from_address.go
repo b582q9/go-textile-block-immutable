@@ -1,11 +1,11 @@
 package keypair
 
 import (
+	"github.com/b582q9/go-textile-block-immutable/crypto"
+	"github.com/b582q9/go-textile-block-immutable/strkey"
 	libp2pc "github.com/libp2p/go-libp2p-core/crypto"
 	pb "github.com/libp2p/go-libp2p-core/crypto/pb"
 	peer "github.com/libp2p/go-libp2p-core/peer"
-	"github.com/textileio/go-textile/crypto"
-	"github.com/textileio/go-textile/strkey"
 	"golang.org/x/crypto/ed25519"
 )
 

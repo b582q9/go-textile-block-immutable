@@ -1,15 +1,15 @@
 package mobile
 
 import (
+	"github.com/b582q9/go-textile-block-immutable/broadcast"
+	"github.com/b582q9/go-textile-block-immutable/common"
+	"github.com/b582q9/go-textile-block-immutable/core"
+	"github.com/b582q9/go-textile-block-immutable/keypair"
+	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-block-immutable/wallet"
 	"github.com/golang/protobuf/proto"
 	logging "github.com/ipfs/go-log"
 	mh "github.com/multiformats/go-multihash"
-	"github.com/textileio/go-textile/broadcast"
-	"github.com/textileio/go-textile/common"
-	"github.com/textileio/go-textile/core"
-	"github.com/textileio/go-textile/keypair"
-	"github.com/textileio/go-textile/pb"
-	"github.com/textileio/go-textile/wallet"
 )
 
 var log = logging.Logger("tex-mobile")

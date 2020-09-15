@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"io"
 
+	"github.com/b582q9/go-textile-block-immutable/strkey"
 	libp2pc "github.com/libp2p/go-libp2p-core/crypto"
 	peer "github.com/libp2p/go-libp2p-core/peer"
-	"github.com/textileio/go-textile/strkey"
 )
 
 var (

@@ -7,6 +7,14 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/b582q9/go-textile-block-immutable/broadcast"
+	"github.com/b582q9/go-textile-block-immutable/crypto"
+	"github.com/b582q9/go-textile-block-immutable/ipfs"
+	"github.com/b582q9/go-textile-block-immutable/keypair"
+	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-block-immutable/repo"
+	"github.com/b582q9/go-textile-block-immutable/repo/db"
+	"github.com/b582q9/go-textile-block-immutable/service"
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
 	"github.com/ipfs/go-ipfs/core"
@@ -14,14 +22,6 @@ import (
 	protocol "github.com/libp2p/go-libp2p-core/protocol"
 	mh "github.com/multiformats/go-multihash"
 	"github.com/segmentio/ksuid"
-	"github.com/textileio/go-textile/broadcast"
-	"github.com/textileio/go-textile/crypto"
-	"github.com/textileio/go-textile/ipfs"
-	"github.com/textileio/go-textile/keypair"
-	"github.com/textileio/go-textile/pb"
-	"github.com/textileio/go-textile/repo"
-	"github.com/textileio/go-textile/repo/db"
-	"github.com/textileio/go-textile/service"
 )
 
 // ErrInvalidThreadBlock is a catch all error for malformed / invalid blocks

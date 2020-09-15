@@ -9,13 +9,13 @@ import (
 	"sync"
 	"time"
 
+	"github.com/b582q9/go-textile-block-immutable/jwt"
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	njwt "github.com/dgrijalva/jwt-go"
 	limit "github.com/gin-contrib/size"
 	"github.com/gin-gonic/gin"
 	"github.com/libp2p/go-libp2p-core/peer"
 	"github.com/mr-tron/base58/base58"
-	"github.com/textileio/go-textile/jwt"
-	"github.com/textileio/go-textile/pb"
 	"golang.org/x/crypto/bcrypt"
 )
 

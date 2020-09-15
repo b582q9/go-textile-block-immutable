@@ -1,7 +1,7 @@
 package core
 
 import (
-	"github.com/textileio/go-textile/pb"
+	"github.com/b582q9/go-textile-block-immutable/pb"
 )
 
 // handleMergeBlock handles an incoming merge block

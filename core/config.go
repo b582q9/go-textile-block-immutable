@@ -7,10 +7,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/b582q9/go-textile-block-immutable/repo/config"
 	"github.com/ipfs/go-ipfs/repo"
 	"github.com/ipfs/go-ipfs/repo/fsrepo"
 	"github.com/rs/cors"
-	"github.com/textileio/go-textile/repo/config"
 )
 
 const minPort = 1024

@@ -3,8 +3,8 @@ package schema
 import (
 	"fmt"
 
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	ipld "github.com/ipfs/go-ipld-format"
-	"github.com/textileio/go-textile/pb"
 )
 
 // ErrFileValidationFailed indicates dag schema validation failed

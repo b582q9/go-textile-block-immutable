@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/b582q9/go-textile-block-immutable/keypair"
+	. "github.com/b582q9/go-textile-block-immutable/wallet"
 	"github.com/stretchr/testify/assert"
-	"github.com/textileio/go-textile/keypair"
-	. "github.com/textileio/go-textile/wallet"
 )
 
 func ExampleDeriveFromPath() {

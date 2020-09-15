@@ -4,10 +4,10 @@ import (
 	"os"
 	"testing"
 
-	. "github.com/textileio/go-textile/api"
-	"github.com/textileio/go-textile/bots"
-	"github.com/textileio/go-textile/core"
-	"github.com/textileio/go-textile/keypair"
+	. "github.com/b582q9/go-textile-block-immutable/api"
+	"github.com/b582q9/go-textile-block-immutable/bots"
+	"github.com/b582q9/go-textile-block-immutable/core"
+	"github.com/b582q9/go-textile-block-immutable/keypair"
 )
 
 var initConfig = core.InitConfig{

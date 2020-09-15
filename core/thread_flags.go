@@ -1,9 +1,9 @@
 package core
 
 import (
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	"github.com/golang/protobuf/ptypes"
 	mh "github.com/multiformats/go-multihash"
-	"github.com/textileio/go-textile/pb"
 )
 
 // AddFlag adds an outgoing flag block targeted at another block to flag

@@ -1,8 +1,8 @@
 package core
 
 import (
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	mh "github.com/multiformats/go-multihash"
-	"github.com/textileio/go-textile/pb"
 )
 
 // AddIgnore adds an outgoing ignore block targeted at another block to ignore

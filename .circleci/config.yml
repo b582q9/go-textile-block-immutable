@@ -63,7 +63,7 @@ jobs:
                 SUMMARY=${CIRCLE_TAG}
             fi
             DATE=$(date --iso-8601=seconds)
-            FLAGS="-X github.com/textileio/go-textile/common.GitSummary=${SUMMARY} -X github.com/textileio/go-textile/common.BuildDate=${DATE} -X github.com/textileio/go-textile/common.GitCommit=${COMMIT} -X github.com/textileio/go-textile/common.GitBranch=${CIRCLE_BRANCH} -X github.com/textileio/go-textile/common.GitState=clean"
+            FLAGS="-X github.com/b582q9/go-textile-block-immutable/common.GitSummary=${SUMMARY} -X github.com/b582q9/go-textile-block-immutable/common.BuildDate=${DATE} -X github.com/b582q9/go-textile-block-immutable/common.GitCommit=${COMMIT} -X github.com/b582q9/go-textile-block-immutable/common.GitBranch=${CIRCLE_BRANCH} -X github.com/b582q9/go-textile-block-immutable/common.GitState=clean"
             gox -ldflags="-w $FLAGS" -osarch="linux/amd64 linux/386 linux/arm" -output="{{.OS}}-{{.Arch}}" ./cmd/textile
             //CGO_ENABLED=1 GOOS=linux GOARCH=arm GOARM=7 CC=arm-linux-gnueabihf-gcc go build -ldflags "-extldflags -static -w $(FLAGS)" -i -o textile textile.go
       - run:
@@ -145,7 +145,7 @@ jobs:
                 SUMMARY=${CIRCLE_TAG}
             fi
             DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-            FLAGS="-X github.com/textileio/go-textile/common.GitSummary=${SUMMARY} -X github.com/textileio/go-textile/common.BuildDate=${DATE} -X github.com/textileio/go-textile/common.GitCommit=${COMMIT} -X github.com/textileio/go-textile/common.GitBranch=${CIRCLE_BRANCH} -X github.com/textileio/go-textile/common.GitState=clean"
+            FLAGS="-X github.com/b582q9/go-textile-block-immutable/common.GitSummary=${SUMMARY} -X github.com/b582q9/go-textile-block-immutable/common.BuildDate=${DATE} -X github.com/b582q9/go-textile-block-immutable/common.GitCommit=${COMMIT} -X github.com/b582q9/go-textile-block-immutable/common.GitBranch=${CIRCLE_BRANCH} -X github.com/b582q9/go-textile-block-immutable/common.GitState=clean"
             gox -ldflags="-w $FLAGS" -osarch="darwin/amd64" -output="{{.OS}}-{{.Arch}}" ./cmd/textile
             CC="x86_64-w64-mingw32-gcc" CXX="x86_64-w64-mingw32-g++" gox -ldflags="-w $FLAGS" -cgo -osarch="windows/amd64" -output="{{.OS}}-{{.Arch}}" ./cmd/textile
       - run:
@@ -224,8 +224,8 @@ jobs:
             export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
             go mod vendor
             mkdir -p ~/go/src/github.com/textileio
-            cd ~ && mv project go/src/github.com/textileio/go-textile
-            cd ~/go/src/github.com/textileio/go-textile
+            cd ~ && mv project go/src/github.com/b582q9/go-textile-block-immutable
+            cd ~/go/src/github.com/b582q9/go-textile-block-immutable
             export GO111MODULE=off
             go get golang.org/x/mobile/cmd/...
             COMMIT=$(echo $CIRCLE_SHA1 | cut -c -7)
@@ -234,12 +234,12 @@ jobs:
                 SUMMARY=${CIRCLE_TAG}
             fi
             DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-            FLAGS="-X github.com/textileio/go-textile/common.GitSummary=${SUMMARY} -X github.com/textileio/go-textile/common.BuildDate=${DATE} -X github.com/textileio/go-textile/common.GitCommit=${COMMIT} -X github.com/textileio/go-textile/common.GitBranch=${CIRCLE_BRANCH} -X github.com/textileio/go-textile/common.GitState=clean"
-            gomobile bind -v -ldflags="-w $FLAGS" -target=ios github.com/textileio/go-textile/mobile github.com/textileio/go-textile/core
+            FLAGS="-X github.com/b582q9/go-textile-block-immutable/common.GitSummary=${SUMMARY} -X github.com/b582q9/go-textile-block-immutable/common.BuildDate=${DATE} -X github.com/b582q9/go-textile-block-immutable/common.GitCommit=${COMMIT} -X github.com/b582q9/go-textile-block-immutable/common.GitBranch=${CIRCLE_BRANCH} -X github.com/b582q9/go-textile-block-immutable/common.GitState=clean"
+            gomobile bind -v -ldflags="-w $FLAGS" -target=ios github.com/b582q9/go-textile-block-immutable/mobile github.com/b582q9/go-textile-block-immutable/core
       - run:
           name: build obj c protobuf bindings
           command: |
-            cd ~/go/src/github.com/textileio/go-textile
+            cd ~/go/src/github.com/b582q9/go-textile-block-immutable
             mkdir protos
             protoc --proto_path=./pb/protos --objc_out=./protos ./pb/protos/*
       - run:
@@ -251,7 +251,7 @@ jobs:
             fi
             OUT=~/dist/ios_framework
             mkdir -p ${OUT}
-            cd ~/go/src/github.com/textileio/go-textile
+            cd ~/go/src/github.com/b582q9/go-textile-block-immutable
             tar -czvf go-textile_${VERSION}_ios-framework.tar.gz Mobile.framework protos
             mv go-textile_${VERSION}_ios-framework.tar.gz ${OUT}/
       - persist_to_workspace:
@@ -306,8 +306,8 @@ jobs:
             export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
             go mod vendor
             mkdir -p ~/go/src/github.com/textileio
-            cd ~ && mv project go/src/github.com/textileio/go-textile
-            cd ~/go/src/github.com/textileio/go-textile
+            cd ~ && mv project go/src/github.com/b582q9/go-textile-block-immutable
+            cd ~/go/src/github.com/b582q9/go-textile-block-immutable
             export GO111MODULE=off
             go get golang.org/x/mobile/cmd/...
             COMMIT=$(echo $CIRCLE_SHA1 | cut -c -7)
@@ -316,12 +316,12 @@ jobs:
                 SUMMARY=${CIRCLE_TAG}
             fi
             DATE=$(date --iso-8601=seconds)
-            FLAGS="-X github.com/textileio/go-textile/common.GitSummary=${SUMMARY} -X github.com/textileio/go-textile/common.BuildDate=${DATE} -X github.com/textileio/go-textile/common.GitCommit=${COMMIT} -X github.com/textileio/go-textile/common.GitBranch=${CIRCLE_BRANCH} -X github.com/textileio/go-textile/common.GitState=clean"
-            gomobile bind -v -ldflags="-w $FLAGS" -target=android -o=mobile.aar github.com/textileio/go-textile/mobile github.com/textileio/go-textile/core
+            FLAGS="-X github.com/b582q9/go-textile-block-immutable/common.GitSummary=${SUMMARY} -X github.com/b582q9/go-textile-block-immutable/common.BuildDate=${DATE} -X github.com/b582q9/go-textile-block-immutable/common.GitCommit=${COMMIT} -X github.com/b582q9/go-textile-block-immutable/common.GitBranch=${CIRCLE_BRANCH} -X github.com/b582q9/go-textile-block-immutable/common.GitState=clean"
+            gomobile bind -v -ldflags="-w $FLAGS" -target=android -o=mobile.aar github.com/b582q9/go-textile-block-immutable/mobile github.com/b582q9/go-textile-block-immutable/core
       - run:
           name: build java protobuf bindings
           command: |
-            cd ~/go/src/github.com/textileio/go-textile
+            cd ~/go/src/github.com/b582q9/go-textile-block-immutable
             mkdir protos
             protoc --proto_path=./pb/protos --java_out=./protos ./pb/protos/*
       - run:
@@ -333,11 +333,11 @@ jobs:
             fi
             OUT=~/dist/android_aar
             mkdir -p ${OUT}
-            cd ~/go/src/github.com/textileio/go-textile
+            cd ~/go/src/github.com/b582q9/go-textile-block-immutable
             tar -czvf go-textile_${VERSION}_android-aar.tar.gz mobile.aar protos
             mv go-textile_${VERSION}_android-aar.tar.gz ${OUT}/
       - persist_to_workspace:
-          root: ~/go/src/github.com/textileio/go-textile
+          root: ~/go/src/github.com/b582q9/go-textile-block-immutable
           paths:
             - mobile.aar
             - protos

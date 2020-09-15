@@ -3,8 +3,8 @@ package strkey_test
 import (
 	"testing"
 
+	. "github.com/b582q9/go-textile-block-immutable/strkey"
 	"github.com/stretchr/testify/assert"
-	. "github.com/textileio/go-textile/strkey"
 )
 
 func TestDecode(t *testing.T) {

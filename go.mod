@@ -1,4 +1,4 @@
-module github.com/textileio/go-textile
+module github.com/b582q9/go-textile-block-immutable
 
 go 1.13
 

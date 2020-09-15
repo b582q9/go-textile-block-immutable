@@ -7,6 +7,15 @@ import (
 	"sync"
 	"time"
 
+	"github.com/b582q9/go-textile-block-immutable/crypto"
+	"github.com/b582q9/go-textile-block-immutable/ipfs"
+	"github.com/b582q9/go-textile-block-immutable/keypair"
+	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-block-immutable/repo"
+	"github.com/b582q9/go-textile-block-immutable/repo/config"
+	"github.com/b582q9/go-textile-block-immutable/repo/db"
+	"github.com/b582q9/go-textile-block-immutable/schema"
+	"github.com/b582q9/go-textile-block-immutable/util"
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
@@ -15,15 +24,6 @@ import (
 	uio "github.com/ipfs/go-unixfs/io"
 	libp2pc "github.com/libp2p/go-libp2p-core/crypto"
 	mh "github.com/multiformats/go-multihash"
-	"github.com/textileio/go-textile/crypto"
-	"github.com/textileio/go-textile/ipfs"
-	"github.com/textileio/go-textile/keypair"
-	"github.com/textileio/go-textile/pb"
-	"github.com/textileio/go-textile/repo"
-	"github.com/textileio/go-textile/repo/config"
-	"github.com/textileio/go-textile/repo/db"
-	"github.com/textileio/go-textile/schema"
-	"github.com/textileio/go-textile/util"
 )
 
 // blockLinkName is the name of the link containing the encrypted block

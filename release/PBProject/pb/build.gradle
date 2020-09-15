@@ -12,8 +12,8 @@ ext {
 
 	libraryDescription = 'Generated protobuf classes for Textile'
 
-	siteUrl = 'https://github.com/textileio/go-textile'
-	gitUrl = 'https://github.com/textileio/go-textile.git'
+	siteUrl = 'https://github.com/b582q9/go-textile-block-immutable'
+	gitUrl = 'https://github.com/b582q9/go-textile-block-immutable.git'
 
 	libraryVersion = '<version>'
 

@@ -4,8 +4,8 @@ import (
 	"database/sql"
 	"time"
 
-	"github.com/textileio/go-textile/keypair"
-	"github.com/textileio/go-textile/pb"
+	"github.com/b582q9/go-textile-block-immutable/keypair"
+	"github.com/b582q9/go-textile-block-immutable/pb"
 )
 
 type Datastore interface {

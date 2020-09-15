@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/textileio/go-textile/wallet"
+	"github.com/b582q9/go-textile-block-immutable/wallet"
 )
 
 func WalletInit(words int, passphrase string) error {

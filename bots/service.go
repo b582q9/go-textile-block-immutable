@@ -7,6 +7,9 @@ import (
 	"path"
 	"reflect"
 
+	core "github.com/b582q9/go-textile-block-immutable/core"
+	"github.com/b582q9/go-textile-block-immutable/crypto"
+	ipfs "github.com/b582q9/go-textile-block-immutable/ipfs"
 	ds "github.com/ipfs/go-datastore"
 	nsds "github.com/ipfs/go-datastore/namespace"
 	query "github.com/ipfs/go-datastore/query"
@@ -14,9 +17,6 @@ import (
 	tbots "github.com/textileio/go-textile-bots"
 	shared "github.com/textileio/go-textile-core/bots"
 	pb "github.com/textileio/go-textile-core/bots/pb"
-	core "github.com/textileio/go-textile/core"
-	"github.com/textileio/go-textile/crypto"
-	ipfs "github.com/textileio/go-textile/ipfs"
 )
 
 // BotIpfsHandler implements shared.IpfsHandler. Extends it by hanging on the the botID

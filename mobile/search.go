@@ -1,9 +1,9 @@
 package mobile
 
 import (
+	"github.com/b582q9/go-textile-block-immutable/broadcast"
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	"github.com/segmentio/ksuid"
-	"github.com/textileio/go-textile/broadcast"
-	"github.com/textileio/go-textile/pb"
 )
 
 // SearchHandle is used to cancel an async search request

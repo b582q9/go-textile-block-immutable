@@ -8,8 +8,8 @@ import (
 	"os"
 	"testing"
 
+	"github.com/b582q9/go-textile-block-immutable/mill/testdata"
 	"github.com/rwcarlsen/goexif/exif"
-	"github.com/textileio/go-textile/mill/testdata"
 )
 
 var errFailedToFindExifMarker = fmt.Errorf("exif: failed to find exif intro marker")

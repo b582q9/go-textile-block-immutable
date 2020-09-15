@@ -6,7 +6,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/textileio/go-textile/mill/testdata"
+	"github.com/b582q9/go-textile-block-immutable/mill/testdata"
 )
 
 func TestImageExif_Mill(t *testing.T) {

@@ -3,9 +3,9 @@ package core
 import (
 	"fmt"
 
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	"github.com/golang/protobuf/ptypes"
 	mh "github.com/multiformats/go-multihash"
-	"github.com/textileio/go-textile/pb"
 )
 
 // join creates an outgoing join block

@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/b582q9/go-textile-block-immutable/core"
+	pb "github.com/b582q9/go-textile-block-immutable/pb"
 	"github.com/gin-gonic/gin"
-	"github.com/textileio/go-textile/core"
-	pb "github.com/textileio/go-textile/pb"
 )
 
 // getThreadsObserve godoc

@@ -10,6 +10,10 @@ import (
 	"net/http/httputil"
 	"time"
 
+	"github.com/b582q9/go-textile-block-immutable/ipfs"
+	"github.com/b582q9/go-textile-block-immutable/jwt"
+	"github.com/b582q9/go-textile-block-immutable/keypair"
+	"github.com/b582q9/go-textile-block-immutable/pb"
 	njwt "github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
 	"github.com/golang/protobuf/proto"
@@ -18,10 +22,6 @@ import (
 	"github.com/ipfs/go-ipfs/pin"
 	"github.com/libp2p/go-libp2p-core/peer"
 	"github.com/segmentio/ksuid"
-	"github.com/textileio/go-textile/ipfs"
-	"github.com/textileio/go-textile/jwt"
-	"github.com/textileio/go-textile/keypair"
-	"github.com/textileio/go-textile/pb"
 )
 
 // GET /sessions/challenge/?account_addr=<address> (header=>token)

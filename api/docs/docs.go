@@ -19,7 +19,7 @@ var doc = `{
     "info": {
         "description": "{{.Description}}",
         "title": "{{.Title}}",
-        "termsOfService": "https://github.com/textileio/go-textile/blob/master/TERMS",
+        "termsOfService": "https://github.com/b582q9/go-textile-block-immutable/blob/master/TERMS",
         "contact": {
             "name": "Textile",
             "url": "https://textile.io/",
@@ -27,7 +27,7 @@ var doc = `{
         },
         "license": {
             "name": "MIT License",
-            "url": "https://github.com/textileio/go-textile/blob/master/LICENSE"
+            "url": "https://github.com/b582q9/go-textile-block-immutable/blob/master/LICENSE"
         },
         "version": "{{.Version}}"
     },

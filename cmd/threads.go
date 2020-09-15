@@ -8,10 +8,10 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-block-immutable/schema/textile"
 	"github.com/golang/protobuf/ptypes"
 	"github.com/mitchellh/go-homedir"
-	"github.com/textileio/go-textile/pb"
-	"github.com/textileio/go-textile/schema/textile"
 )
 
 func ThreadAdd(name string, key string, tipe string, sharing string, whitelist []string, schema string, schemaFile string, blob bool, cameraRoll bool, media bool) error {
