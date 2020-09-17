@@ -3,8 +3,6 @@ package mobile
 import (
 	"bytes"
 	"fmt"
-	"net/http"
-
 	"github.com/b582q9/go-textile-block-immutable/broadcast"
 	"github.com/b582q9/go-textile-block-immutable/core"
 	"github.com/b582q9/go-textile-block-immutable/ipfs"
@@ -27,11 +25,6 @@ func (m *Mobile) PeerId() (string, error) {
 		return "", err
 	}
 	return pid.Pretty(), nil
-}
-func IpfsCat(hash string, key string) error {
-	return executeBlobCmd(http.MethodGet, "ipfs/cat/"+hash, params{
-		opts: map[string]string{"key": key},
-	})
 }
 
 // SwarmConnect opens a new direct connection to a peer using an IPFS multiaddr
