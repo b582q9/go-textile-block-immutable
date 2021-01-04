@@ -1,8 +1,9 @@
 ### ** WARNING **: **[go-textile](https://github.com/b582q9/go-textile-sapien) has been replaced by [go-threads](https://github.com/textileio/go-threads) and [textile](https://github.com/textileio/textile).**
 
 ---
-# go-textile
+# go-textile modified by Sapien Wallet Team
 
+[![Modified by Sapien Wallet Team](https://img.shields.io/badge/modified%20by-Sapien%20Wallet%20Team-informational.svg?style=popout-square)](https://sapienwallet.com)
 [![Made by Textile](https://img.shields.io/badge/made%20by-Textile-informational.svg?style=popout-square)](https://textile.io)
 [![Chat on Slack](https://img.shields.io/badge/slack-slack.textile.io-informational.svg?style=popout-square)](https://slack.textile.io)
 [![GitHub license](https://img.shields.io/github/license/textileio/go-textile.svg?style=popout-square)](./LICENSE)
@@ -10,7 +11,7 @@
 [![CircleCI branch](https://img.shields.io/circleci/project/github/textileio/go-textile/master.svg?style=popout-square)](https://circleci.com/gh/textileio/go-textile)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=popout-square)](https://github.com/RichardLitt/standard-readme)
 
-> Textile implementation in Go
+> Modified Textile implementation in Go
 
 This repository contains the core API, daemon, and command-line client, as well as bindings for mobile (iOS/Android) applications.
 
