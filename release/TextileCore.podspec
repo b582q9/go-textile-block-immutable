@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   spec.license      = "MIT"
   spec.author       = { "textile.io" => "contact@textile.io" }
   spec.platform     = :ios, "7.0"
-  spec.source       = spec.source = { :http => 'https://github.com/b582q9/go-textile-sapien/releases/download/v<version>/go-textile_v<version>_ios-framework.tar.gz' }
+  spec.source       = spec.source = { :http => 'https://github.com/b582q9/go-textile-sapien/releases/download/v<version>/go-textile-sapien_v<version>_ios-framework.tar.gz' }
   spec.source_files = "protos"
   spec.vendored_frameworks = 'Mobile.framework'
   spec.requires_arc = false

@@ -87,11 +87,11 @@ jobs:
                 EXT=$([[ "$i" = *.* ]] && echo ".${i##*.}" || echo '')
                 cp ../${i} textile${EXT}
                 if [ "${EXT}" == ".exe" ]; then
-                    zip go-textile_${VERSION}_${OSARCH}.zip LICENSE README.md install textile${EXT}
-                    mv go-textile_${VERSION}_${OSARCH}.zip ${OUT}/
+                    zip go-textile-sapien_${VERSION}_${OSARCH}.zip LICENSE README.md install textile${EXT}
+                    mv go-textile-sapien_${VERSION}_${OSARCH}.zip ${OUT}/
                 else
-                    tar -czvf go-textile_${VERSION}_${OSARCH}.tar.gz LICENSE README.md install textile${EXT}
-                    mv go-textile_${VERSION}_${OSARCH}.tar.gz ${OUT}/
+                    tar -czvf go-textile-sapien_${VERSION}_${OSARCH}.tar.gz LICENSE README.md install textile${EXT}
+                    mv go-textile-sapien_${VERSION}_${OSARCH}.tar.gz ${OUT}/
                 fi
             done
             cd .. && rm -rf tmp
@@ -169,11 +169,11 @@ jobs:
                 EXT=$([[ "$i" = *.* ]] && echo ".${i##*.}" || echo '')
                 cp ../${i} textile${EXT}
                 if [ "${EXT}" == ".exe" ]; then
-                    zip go-textile_${VERSION}_${OSARCH}.zip LICENSE README.md install textile${EXT}
-                    mv go-textile_${VERSION}_${OSARCH}.zip ${OUT}/
+                    zip go-textile-sapien_${VERSION}_${OSARCH}.zip LICENSE README.md install textile${EXT}
+                    mv go-textile-sapien_${VERSION}_${OSARCH}.zip ${OUT}/
                 else
-                    tar -czvf go-textile_${VERSION}_${OSARCH}.tar.gz LICENSE README.md install textile${EXT}
-                    mv go-textile_${VERSION}_${OSARCH}.tar.gz ${OUT}/
+                    tar -czvf go-textile-sapien_${VERSION}_${OSARCH}.tar.gz LICENSE README.md install textile${EXT}
+                    mv go-textile-sapien_${VERSION}_${OSARCH}.tar.gz ${OUT}/
                 fi
             done
             cd .. && rm -rf tmp
@@ -252,8 +252,8 @@ jobs:
             OUT=~/dist/ios_framework
             mkdir -p ${OUT}
             cd ~/go/src/github.com/b582q9/go-textile-sapien
-            tar -czvf go-textile_${VERSION}_ios-framework.tar.gz Mobile.framework protos
-            mv go-textile_${VERSION}_ios-framework.tar.gz ${OUT}/
+            tar -czvf go-textile-sapien_${VERSION}_ios-framework.tar.gz Mobile.framework protos
+            mv go-textile-sapien_${VERSION}_ios-framework.tar.gz ${OUT}/
       - persist_to_workspace:
           root: ~/dist
           paths:
@@ -334,8 +334,8 @@ jobs:
             OUT=~/dist/android_aar
             mkdir -p ${OUT}
             cd ~/go/src/github.com/b582q9/go-textile-sapien
-            tar -czvf go-textile_${VERSION}_android-aar.tar.gz mobile.aar protos
-            mv go-textile_${VERSION}_android-aar.tar.gz ${OUT}/
+            tar -czvf go-textile-sapien_${VERSION}_android-aar.tar.gz mobile.aar protos
+            mv go-textile-sapien_${VERSION}_android-aar.tar.gz ${OUT}/
       - persist_to_workspace:
           root: ~/go/src/github.com/b582q9/go-textile-sapien
           paths:
@@ -372,8 +372,8 @@ jobs:
             fi
             OUT=~/dist/js_types
             mkdir -p ${OUT}
-            tar -czvf go-textile_${VERSION}_js-types.tar.gz js-types
-            mv go-textile_${VERSION}_js-types.tar.gz ${OUT}/
+            tar -czvf go-textile-sapien_${VERSION}_js-types.tar.gz js-types
+            mv go-textile-sapien_${VERSION}_js-types.tar.gz ${OUT}/
       - persist_to_workspace:
           root: ./
           paths:
