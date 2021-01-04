@@ -1,6 +1,6 @@
 package mobile
 
-import "github.com/b582q9/go-textile-block-immutable/core"
+import "github.com/b582q9/go-textile-sapien/core"
 
 // AddIgnore adds an ignore targeted at the given block and unpins any associated target data
 func (m *Mobile) AddIgnore(blockId string) (string, error) {

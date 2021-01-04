@@ -6,10 +6,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/b582q9/go-textile-block-immutable"
+    "url": "https://github.com/b582q9/go-textile-sapien"
   },
   "bugs": {
-    "url": "https://github.com/b582q9/go-textile-block-immutable"
+    "url": "https://github.com/b582q9/go-textile-sapien"
   },
   "homepage": "https://www.textile.io/",
   "keywords": [

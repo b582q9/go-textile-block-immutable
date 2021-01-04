@@ -6,7 +6,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/b582q9/go-textile-block-immutable/repo"
+	"github.com/b582q9/go-textile-sapien/repo"
 	"github.com/golang/protobuf/jsonpb"
 	logging "github.com/ipfs/go-log"
 	_ "github.com/mutecomm/go-sqlcipher"

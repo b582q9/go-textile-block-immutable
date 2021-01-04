@@ -1,8 +1,8 @@
 package core
 
 import (
-	"github.com/b582q9/go-textile-block-immutable/crypto"
-	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-sapien/crypto"
+	"github.com/b582q9/go-textile-sapien/pb"
 	peer "github.com/libp2p/go-libp2p-core/peer"
 	mh "github.com/multiformats/go-multihash"
 )

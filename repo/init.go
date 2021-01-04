@@ -8,8 +8,8 @@ import (
 	"path"
 	"path/filepath"
 
-	"github.com/b582q9/go-textile-block-immutable/ipfs"
-	"github.com/b582q9/go-textile-block-immutable/repo/config"
+	"github.com/b582q9/go-textile-sapien/ipfs"
+	"github.com/b582q9/go-textile-sapien/repo/config"
 	"github.com/ipfs/go-ipfs/core"
 	"github.com/ipfs/go-ipfs/namesys"
 	loader "github.com/ipfs/go-ipfs/plugin/loader"

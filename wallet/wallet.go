@@ -3,7 +3,7 @@ package wallet
 import (
 	"fmt"
 
-	"github.com/b582q9/go-textile-block-immutable/keypair"
+	"github.com/b582q9/go-textile-sapien/keypair"
 	"github.com/tyler-smith/go-bip39"
 )
 

@@ -1,6 +1,6 @@
 package mobile
 
-import "github.com/b582q9/go-textile-block-immutable/core"
+import "github.com/b582q9/go-textile-sapien/core"
 
 // AddLike adds a like targeted at the given block
 func (m *Mobile) AddLike(blockId string) (string, error) {

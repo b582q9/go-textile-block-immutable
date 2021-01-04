@@ -3,7 +3,7 @@ package schema
 import (
 	"fmt"
 
-	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-sapien/pb"
 	ipld "github.com/ipfs/go-ipld-format"
 )
 

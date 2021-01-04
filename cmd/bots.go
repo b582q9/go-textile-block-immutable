@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/b582q9/go-textile-block-immutable/ipfs"
+	"github.com/b582q9/go-textile-sapien/ipfs"
 	libp2pc "github.com/libp2p/go-libp2p-core/crypto"
 	shared "github.com/textileio/go-textile-core/bots"
 )

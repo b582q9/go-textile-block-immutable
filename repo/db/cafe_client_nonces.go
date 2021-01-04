@@ -4,9 +4,9 @@ import (
 	"database/sql"
 	"sync"
 
-	"github.com/b582q9/go-textile-block-immutable/pb"
-	"github.com/b582q9/go-textile-block-immutable/repo"
-	"github.com/b582q9/go-textile-block-immutable/util"
+	"github.com/b582q9/go-textile-sapien/pb"
+	"github.com/b582q9/go-textile-sapien/repo"
+	"github.com/b582q9/go-textile-sapien/util"
 )
 
 type CafeClientNonceDB struct {

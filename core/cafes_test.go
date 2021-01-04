@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/b582q9/go-textile-block-immutable/ipfs"
-	"github.com/b582q9/go-textile-block-immutable/pb"
-	"github.com/b582q9/go-textile-block-immutable/schema/textile"
+	"github.com/b582q9/go-textile-sapien/ipfs"
+	"github.com/b582q9/go-textile-sapien/pb"
+	"github.com/b582q9/go-textile-sapien/schema/textile"
 	icid "github.com/ipfs/go-cid"
 	"github.com/libp2p/go-libp2p-core/peerstore"
 	"github.com/segmentio/ksuid"

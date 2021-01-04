@@ -6,9 +6,9 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/b582q9/go-textile-block-immutable/crypto"
-	"github.com/b582q9/go-textile-block-immutable/ipfs"
-	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-sapien/crypto"
+	"github.com/b582q9/go-textile-sapien/ipfs"
+	"github.com/b582q9/go-textile-sapien/pb"
 	"github.com/gin-gonic/gin"
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes/any"

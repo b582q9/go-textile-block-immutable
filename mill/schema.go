@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"encoding/json"
 
-	"github.com/b582q9/go-textile-block-immutable/pb"
-	"github.com/b582q9/go-textile-block-immutable/schema"
+	"github.com/b582q9/go-textile-sapien/pb"
+	"github.com/b582q9/go-textile-sapien/schema"
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/xeipuuv/gojsonschema"
 )

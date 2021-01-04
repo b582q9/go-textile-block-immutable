@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-sapien/pb"
 	"github.com/golang/protobuf/proto"
 	"github.com/libp2p/go-libp2p-core/helpers"
 	inet "github.com/libp2p/go-libp2p-core/network"

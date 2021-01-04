@@ -11,7 +11,7 @@ import (
 
 func TestBuild(t *testing.T) {
 	RegisterFailHandler(Fail)
-	RunSpecs(t, "Package: github.com/b582q9/go-textile-block-immutable/keypair")
+	RunSpecs(t, "Package: github.com/b582q9/go-textile-sapien/keypair")
 }
 
 var (

@@ -9,7 +9,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/b582q9/go-textile-block-immutable/repo/config"
+	"github.com/b582q9/go-textile-sapien/repo/config"
 	jsonpatch "github.com/evanphx/json-patch"
 	"github.com/gin-gonic/gin"
 )

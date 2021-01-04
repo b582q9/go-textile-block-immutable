@@ -5,7 +5,7 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/b582q9/go-textile-block-immutable/crc16"
+	"github.com/b582q9/go-textile-sapien/crc16"
 	"github.com/mr-tron/base58/base58"
 )
 

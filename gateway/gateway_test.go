@@ -4,9 +4,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/b582q9/go-textile-block-immutable/core"
-	. "github.com/b582q9/go-textile-block-immutable/gateway"
-	"github.com/b582q9/go-textile-block-immutable/keypair"
+	"github.com/b582q9/go-textile-sapien/core"
+	. "github.com/b582q9/go-textile-sapien/gateway"
+	"github.com/b582q9/go-textile-sapien/keypair"
 )
 
 var initConfig = core.InitConfig{

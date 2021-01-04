@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/b582q9/go-textile-block-immutable/core"
+	"github.com/b582q9/go-textile-sapien/core"
 	"github.com/gin-gonic/gin"
 )
 

@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/b582q9/go-textile-block-immutable/keypair"
-	"github.com/b582q9/go-textile-block-immutable/strkey"
+	"github.com/b582q9/go-textile-sapien/keypair"
+	"github.com/b582q9/go-textile-sapien/strkey"
 	native "github.com/ipfs/go-ipfs-config"
 	_ "github.com/mutecomm/go-sqlcipher"
 )

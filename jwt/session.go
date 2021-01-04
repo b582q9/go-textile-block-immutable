@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-sapien/pb"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/golang/protobuf/ptypes"
 	libp2pc "github.com/libp2p/go-libp2p-core/crypto"

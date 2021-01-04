@@ -3,10 +3,10 @@ package core
 import (
 	"fmt"
 
-	"github.com/b582q9/go-textile-block-immutable/crypto"
-	"github.com/b582q9/go-textile-block-immutable/ipfs"
-	"github.com/b582q9/go-textile-block-immutable/pb"
-	"github.com/b582q9/go-textile-block-immutable/util"
+	"github.com/b582q9/go-textile-sapien/crypto"
+	"github.com/b582q9/go-textile-sapien/ipfs"
+	"github.com/b582q9/go-textile-sapien/pb"
+	"github.com/b582q9/go-textile-sapien/util"
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
 	peer "github.com/libp2p/go-libp2p-core/peer"

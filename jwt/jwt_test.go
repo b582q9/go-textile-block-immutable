@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/b582q9/go-textile-block-immutable/ipfs"
-	. "github.com/b582q9/go-textile-block-immutable/jwt"
+	"github.com/b582q9/go-textile-sapien/ipfs"
+	. "github.com/b582q9/go-textile-sapien/jwt"
 	"github.com/dgrijalva/jwt-go"
 )
 

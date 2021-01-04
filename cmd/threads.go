@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/b582q9/go-textile-block-immutable/pb"
-	"github.com/b582q9/go-textile-block-immutable/schema/textile"
+	"github.com/b582q9/go-textile-sapien/pb"
+	"github.com/b582q9/go-textile-sapien/schema/textile"
 	"github.com/golang/protobuf/ptypes"
 	"github.com/mitchellh/go-homedir"
 )

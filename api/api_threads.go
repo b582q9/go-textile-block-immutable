@@ -4,9 +4,9 @@ import (
 	"crypto/rand"
 	"net/http"
 
-	"github.com/b582q9/go-textile-block-immutable/core"
-	"github.com/b582q9/go-textile-block-immutable/pb"
-	"github.com/b582q9/go-textile-block-immutable/util"
+	"github.com/b582q9/go-textile-sapien/core"
+	"github.com/b582q9/go-textile-sapien/pb"
+	"github.com/b582q9/go-textile-sapien/util"
 	"github.com/gin-gonic/gin"
 	libp2pc "github.com/libp2p/go-libp2p-core/crypto"
 	"github.com/segmentio/ksuid"

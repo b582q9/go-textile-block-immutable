@@ -8,8 +8,8 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/b582q9/go-textile-block-immutable/ipfs"
-	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-sapien/ipfs"
+	"github.com/b582q9/go-textile-sapien/pb"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/render"
 	"github.com/golang/protobuf/proto"

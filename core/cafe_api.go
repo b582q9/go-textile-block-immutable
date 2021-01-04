@@ -9,8 +9,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/b582q9/go-textile-block-immutable/jwt"
-	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-sapien/jwt"
+	"github.com/b582q9/go-textile-sapien/pb"
 	njwt "github.com/dgrijalva/jwt-go"
 	limit "github.com/gin-contrib/size"
 	"github.com/gin-gonic/gin"

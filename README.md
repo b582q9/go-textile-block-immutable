@@ -1,4 +1,4 @@
-### ** WARNING **: **[go-textile](https://github.com/b582q9/go-textile-block-immutable) has been replaced by [go-threads](https://github.com/textileio/go-threads) and [textile](https://github.com/textileio/textile).**
+### ** WARNING **: **[go-textile](https://github.com/b582q9/go-textile-sapien) has been replaced by [go-threads](https://github.com/textileio/go-threads) and [textile](https://github.com/textileio/textile).**
 
 ---
 # go-textile
@@ -6,7 +6,7 @@
 [![Made by Textile](https://img.shields.io/badge/made%20by-Textile-informational.svg?style=popout-square)](https://textile.io)
 [![Chat on Slack](https://img.shields.io/badge/slack-slack.textile.io-informational.svg?style=popout-square)](https://slack.textile.io)
 [![GitHub license](https://img.shields.io/github/license/textileio/go-textile.svg?style=popout-square)](./LICENSE)
-[![Go Report Card](https://goreportcard.com/badge/github.com/b582q9/go-textile-block-immutable?style=flat-square)](https://goreportcard.com/report/github.com/b582q9/go-textile-block-immutable?style=flat-square)
+[![Go Report Card](https://goreportcard.com/badge/github.com/b582q9/go-textile-sapien?style=flat-square)](https://goreportcard.com/report/github.com/b582q9/go-textile-sapien?style=flat-square)
 [![CircleCI branch](https://img.shields.io/circleci/project/github/textileio/go-textile/master.svg?style=popout-square)](https://circleci.com/gh/textileio/go-textile)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=popout-square)](https://github.com/RichardLitt/standard-readme)
 
@@ -48,14 +48,14 @@ With good encryption defaults and anonymous, disposable application services lik
 
 ## Install
 
-    env GO111MODULE=on go get github.com/b582q9/go-textile-block-immutable
-    env GO111MODULE=on go install github.com/b582q9/go-textile-block-immutable/cmd/textile
+    env GO111MODULE=on go get github.com/b582q9/go-textile-sapien
+    env GO111MODULE=on go install github.com/b582q9/go-textile-sapien/cmd/textile
 
 [Installation instructions](https://docs.textile.io/install/the-daemon/) for pre-built binaries are in [the docs](https://docs.textile.io).
 
 ## Usage
 
-Go to https://godoc.org/github.com/b582q9/go-textile-block-immutable.
+Go to https://godoc.org/github.com/b582q9/go-textile-sapien.
 
 The [Tour of Textile](https://docs.textile.io/a-tour-of-textile/) goes through many examples and use cases. `textile --help` provides a quick look at the available APIs. For a full overview of every CLI command available, refer to our [Command Line Documentation](https://docs.textile.io/develop/clients/command-line/).
 
@@ -99,7 +99,7 @@ Now you can execute the iOS and Android build tasks below. For the other build t
 This project is a work in progress. As such, there's a few things you can do right now to help out:
 
 -   **Ask questions**! We'll try to help. Be sure to drop a note (on the above issue) if there is anything you'd like to work on and we'll update the issue to let others know. Also [get in touch](https://slack.textile.io) on Slack.
--   **Open issues**, [file issues](https://github.com/b582q9/go-textile-block-immutable/issues), submit pull requests!
+-   **Open issues**, [file issues](https://github.com/b582q9/go-textile-sapien/issues), submit pull requests!
 -   **Perform code reviews**. More eyes will help a) speed the project along b) ensure quality and c) reduce possible future bugs.
 -   **Take a look at the code**. Contributions here that would be most helpful are **top-level comments** about how it should look based on your understanding. Again, the more eyes the better.
 -   **Add tests**. There can never be enough tests.
@@ -108,7 +108,7 @@ Before you get started, be sure to read our [contributors guide](./CONTRIBUTING.
 
 ## Changelog
 
-[Changelog is published to Releases.](https://github.com/b582q9/go-textile-block-immutable/releases)
+[Changelog is published to Releases.](https://github.com/b582q9/go-textile-sapien/releases)
 
 ## License
 

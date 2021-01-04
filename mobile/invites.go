@@ -1,7 +1,7 @@
 package mobile
 
 import (
-	"github.com/b582q9/go-textile-block-immutable/core"
+	"github.com/b582q9/go-textile-sapien/core"
 	"github.com/golang/protobuf/proto"
 	"github.com/mr-tron/base58/base58"
 )

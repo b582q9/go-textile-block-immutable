@@ -3,8 +3,8 @@ package cmd
 import (
 	"net/http"
 
-	"github.com/b582q9/go-textile-block-immutable/keypair"
-	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-sapien/keypair"
+	"github.com/b582q9/go-textile-sapien/pb"
 )
 
 func ProfileGet() error {

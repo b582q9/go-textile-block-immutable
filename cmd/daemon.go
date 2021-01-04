@@ -10,14 +10,14 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/b582q9/go-textile-block-immutable/api"
-	"github.com/b582q9/go-textile-block-immutable/bots"
-	"github.com/b582q9/go-textile-block-immutable/common"
-	"github.com/b582q9/go-textile-block-immutable/core"
-	"github.com/b582q9/go-textile-block-immutable/gateway"
-	"github.com/b582q9/go-textile-block-immutable/pb"
-	"github.com/b582q9/go-textile-block-immutable/repo"
-	"github.com/b582q9/go-textile-block-immutable/util"
+	"github.com/b582q9/go-textile-sapien/api"
+	"github.com/b582q9/go-textile-sapien/bots"
+	"github.com/b582q9/go-textile-sapien/common"
+	"github.com/b582q9/go-textile-sapien/core"
+	"github.com/b582q9/go-textile-sapien/gateway"
+	"github.com/b582q9/go-textile-sapien/pb"
+	"github.com/b582q9/go-textile-sapien/repo"
+	"github.com/b582q9/go-textile-sapien/util"
 )
 
 // Start the daemon against the user repository

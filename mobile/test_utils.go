@@ -3,10 +3,10 @@ package mobile
 import (
 	"os"
 
-	"github.com/b582q9/go-textile-block-immutable/wallet"
+	"github.com/b582q9/go-textile-sapien/wallet"
 
-	"github.com/b582q9/go-textile-block-immutable/core"
-	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-sapien/core"
+	"github.com/b582q9/go-textile-sapien/pb"
 	"github.com/gogo/protobuf/proto"
 )
 

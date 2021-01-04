@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/b582q9/go-textile-block-immutable/core"
+	"github.com/b582q9/go-textile-sapien/core"
 )
 
 // Grab the repo path and migrate it to the latest version, passing the decryption pincode

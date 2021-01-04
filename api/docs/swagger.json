@@ -3,7 +3,7 @@
     "info": {
         "description": "Textile's HTTP REST API Documentation",
         "title": "Textile REST API",
-        "termsOfService": "https://github.com/b582q9/go-textile-block-immutable/blob/master/TERMS",
+        "termsOfService": "https://github.com/b582q9/go-textile-sapien/blob/master/TERMS",
         "contact": {
             "name": "Textile",
             "url": "https://textile.io/",
@@ -11,7 +11,7 @@
         },
         "license": {
             "name": "MIT License",
-            "url": "https://github.com/b582q9/go-textile-block-immutable/blob/master/LICENSE"
+            "url": "https://github.com/b582q9/go-textile-sapien/blob/master/LICENSE"
         },
         "version": "0"
     },

@@ -1,8 +1,8 @@
 package mobile
 
 import (
-	"github.com/b582q9/go-textile-block-immutable/broadcast"
-	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-sapien/broadcast"
+	"github.com/b582q9/go-textile-sapien/pb"
 	"github.com/segmentio/ksuid"
 )
 

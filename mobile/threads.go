@@ -3,8 +3,8 @@ package mobile
 import (
 	"crypto/rand"
 
-	"github.com/b582q9/go-textile-block-immutable/core"
-	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-sapien/core"
+	"github.com/b582q9/go-textile-sapien/pb"
 	"github.com/golang/protobuf/proto"
 	libp2pc "github.com/libp2p/go-libp2p-core/crypto"
 )

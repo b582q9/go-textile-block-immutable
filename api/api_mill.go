@@ -4,8 +4,8 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/b582q9/go-textile-block-immutable/core"
-	m "github.com/b582q9/go-textile-block-immutable/mill"
+	"github.com/b582q9/go-textile-sapien/core"
+	m "github.com/b582q9/go-textile-sapien/mill"
 	"github.com/gin-gonic/gin"
 )
 

@@ -1,4 +1,4 @@
-module github.com/b582q9/go-textile-block-immutable
+module github.com/b582q9/go-textile-sapien
 
 go 1.13
 

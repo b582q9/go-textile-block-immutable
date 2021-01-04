@@ -8,8 +8,8 @@ import (
 	"os"
 	"path"
 
-	"github.com/b582q9/go-textile-block-immutable/crypto"
-	"github.com/b582q9/go-textile-block-immutable/ipfs"
+	"github.com/b582q9/go-textile-sapien/crypto"
+	"github.com/b582q9/go-textile-sapien/ipfs"
 	native "github.com/ipfs/go-ipfs-config"
 	_ "github.com/mutecomm/go-sqlcipher"
 )

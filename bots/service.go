@@ -7,9 +7,9 @@ import (
 	"path"
 	"reflect"
 
-	core "github.com/b582q9/go-textile-block-immutable/core"
-	"github.com/b582q9/go-textile-block-immutable/crypto"
-	ipfs "github.com/b582q9/go-textile-block-immutable/ipfs"
+	core "github.com/b582q9/go-textile-sapien/core"
+	"github.com/b582q9/go-textile-sapien/crypto"
+	ipfs "github.com/b582q9/go-textile-sapien/ipfs"
 	ds "github.com/ipfs/go-datastore"
 	nsds "github.com/ipfs/go-datastore/namespace"
 	query "github.com/ipfs/go-datastore/query"

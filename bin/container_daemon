@@ -1,6 +1,6 @@
 #!/bin/sh
 # this file requires sh over bash:
-# https://github.com/b582q9/go-textile-block-immutable/commit/d1190129727f6f2cb19183f348d67a8552352a2e
+# https://github.com/b582q9/go-textile-sapien/commit/d1190129727f6f2cb19183f348d67a8552352a2e
 set -e
 user=textile
 repo="$TEXTILE_PATH"

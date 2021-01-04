@@ -6,11 +6,11 @@ Pod::Spec.new do |spec|
                       Objective C framework and Protobuf files generated from go-textile. You should
                       not usually use this pod directly, but instead use the Textile pod.
                     DESC
-  spec.homepage     = "https://github.com/b582q9/go-textile-block-immutable"
+  spec.homepage     = "https://github.com/b582q9/go-textile-sapien"
   spec.license      = "MIT"
   spec.author       = { "textile.io" => "contact@textile.io" }
   spec.platform     = :ios, "7.0"
-  spec.source       = spec.source = { :http => 'https://github.com/b582q9/go-textile-block-immutable/releases/download/v<version>/go-textile_v<version>_ios-framework.tar.gz' }
+  spec.source       = spec.source = { :http => 'https://github.com/b582q9/go-textile-sapien/releases/download/v<version>/go-textile_v<version>_ios-framework.tar.gz' }
   spec.source_files = "protos"
   spec.vendored_frameworks = 'Mobile.framework'
   spec.requires_arc = false

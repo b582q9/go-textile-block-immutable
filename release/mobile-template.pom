@@ -8,7 +8,7 @@
   <packaging>aar</packaging>
   <name>mobile</name>
   <description>Generated core API for Textile</description>
-  <url>https://github.com/b582q9/go-textile-block-immutable</url>
+  <url>https://github.com/b582q9/go-textile-sapien</url>
   <licenses>
     <license>
       <name>The Apache Software License, Version 2.0</name>
@@ -23,8 +23,8 @@
     </developer>
   </developers>
   <scm>
-    <connection>https://github.com/b582q9/go-textile-block-immutable.git</connection>
-    <developerConnection>https://github.com/b582q9/go-textile-block-immutable.git</developerConnection>
-    <url>https://github.com/b582q9/go-textile-block-immutable</url>
+    <connection>https://github.com/b582q9/go-textile-sapien.git</connection>
+    <developerConnection>https://github.com/b582q9/go-textile-sapien.git</developerConnection>
+    <url>https://github.com/b582q9/go-textile-sapien</url>
   </scm>
 </project>

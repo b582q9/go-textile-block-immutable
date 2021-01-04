@@ -3,7 +3,7 @@ package crypto_test
 import (
 	"testing"
 
-	. "github.com/b582q9/go-textile-block-immutable/crypto"
+	. "github.com/b582q9/go-textile-sapien/crypto"
 )
 
 var symmetricTestData = struct {

@@ -7,9 +7,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/b582q9/go-textile-block-immutable/keypair"
-	"github.com/b582q9/go-textile-block-immutable/mill"
-	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-sapien/keypair"
+	"github.com/b582q9/go-textile-sapien/mill"
+	"github.com/b582q9/go-textile-sapien/pb"
 	libp2pc "github.com/libp2p/go-libp2p-core/crypto"
 )
 

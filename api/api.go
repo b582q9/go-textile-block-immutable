@@ -12,13 +12,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/b582q9/go-textile-block-immutable/api/docs"
-	"github.com/b582q9/go-textile-block-immutable/bots"
-	"github.com/b582q9/go-textile-block-immutable/common"
-	"github.com/b582q9/go-textile-block-immutable/core"
-	ipfsutil "github.com/b582q9/go-textile-block-immutable/ipfs"
-	m "github.com/b582q9/go-textile-block-immutable/mill"
-	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-sapien/api/docs"
+	"github.com/b582q9/go-textile-sapien/bots"
+	"github.com/b582q9/go-textile-sapien/common"
+	"github.com/b582q9/go-textile-sapien/core"
+	ipfsutil "github.com/b582q9/go-textile-sapien/ipfs"
+	m "github.com/b582q9/go-textile-sapien/mill"
+	"github.com/b582q9/go-textile-sapien/pb"
 	limit "github.com/gin-contrib/size"
 	"github.com/gin-gonic/gin"
 	"github.com/golang/protobuf/jsonpb"
@@ -75,14 +75,14 @@ func (a *Api) Addr() string {
 // @title Textile REST API
 // @version 0
 // @description Textile's HTTP REST API Documentation
-// @termsOfService https://github.com/b582q9/go-textile-block-immutable/blob/master/TERMS
+// @termsOfService https://github.com/b582q9/go-textile-sapien/blob/master/TERMS
 
 // @contact.name Textile
 // @contact.url https://textile.io/
 // @contact.email contact@textile.io
 
 // @license.name MIT License
-// @license.url https://github.com/b582q9/go-textile-block-immutable/blob/master/LICENSE
+// @license.url https://github.com/b582q9/go-textile-sapien/blob/master/LICENSE
 
 // @securityDefinitions.basic BasicAuth
 // @Security BasicAuth

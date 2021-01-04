@@ -1,7 +1,7 @@
 package core
 
 import (
-	"github.com/b582q9/go-textile-block-immutable/pb"
+	"github.com/b582q9/go-textile-sapien/pb"
 	"github.com/golang/protobuf/ptypes"
 	mh "github.com/multiformats/go-multihash"
 )

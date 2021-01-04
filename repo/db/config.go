@@ -6,9 +6,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/b582q9/go-textile-block-immutable/keypair"
-	"github.com/b582q9/go-textile-block-immutable/repo"
-	"github.com/b582q9/go-textile-block-immutable/strkey"
+	"github.com/b582q9/go-textile-sapien/keypair"
+	"github.com/b582q9/go-textile-sapien/repo"
+	"github.com/b582q9/go-textile-sapien/strkey"
 )
 
 type ConfigDB struct {

@@ -3,7 +3,7 @@ package strkey_test
 import (
 	"testing"
 
-	. "github.com/b582q9/go-textile-block-immutable/strkey"
+	. "github.com/b582q9/go-textile-sapien/strkey"
 	"github.com/stretchr/testify/assert"
 )
 

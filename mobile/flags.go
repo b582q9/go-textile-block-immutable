@@ -1,6 +1,6 @@
 package mobile
 
-import "github.com/b582q9/go-textile-block-immutable/core"
+import "github.com/b582q9/go-textile-sapien/core"
 
 // AddFlag adds a flag targeted at the given block
 func (m *Mobile) AddFlag(blockId string) (string, error) {

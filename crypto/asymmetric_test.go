@@ -4,7 +4,7 @@ import (
 	"encoding/hex"
 	"testing"
 
-	. "github.com/b582q9/go-textile-block-immutable/crypto"
+	. "github.com/b582q9/go-textile-sapien/crypto"
 	libp2pc "github.com/libp2p/go-libp2p-core/crypto"
 )
 

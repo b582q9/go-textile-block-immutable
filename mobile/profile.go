@@ -3,7 +3,7 @@ package mobile
 import (
 	"fmt"
 
-	"github.com/b582q9/go-textile-block-immutable/core"
+	"github.com/b582q9/go-textile-sapien/core"
 	"github.com/golang/protobuf/proto"
 	mh "github.com/multiformats/go-multihash"
 )

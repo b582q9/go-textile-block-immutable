@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/b582q9/go-textile-block-immutable/keypair"
-	. "github.com/b582q9/go-textile-block-immutable/wallet"
+	"github.com/b582q9/go-textile-sapien/keypair"
+	. "github.com/b582q9/go-textile-sapien/wallet"
 	"github.com/stretchr/testify/assert"
 )
 
