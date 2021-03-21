@@ -4,6 +4,7 @@ go 1.13
 
 require (
 	github.com/agl/ed25519 v0.0.0-20170116200512-5312a6153412
+	github.com/ahmetb/govvv v0.3.0 // indirect
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
 	github.com/alecthomas/units v0.0.0-20210208195552-ff826a37aa15 // indirect
 	github.com/chzyer/logex v1.1.10 // indirect
@@ -19,20 +20,20 @@ require (
 	github.com/gogo/protobuf v1.3.2
 	github.com/golang/protobuf v1.5.1
 	github.com/ipfs/go-cid v0.0.7
-	github.com/ipfs/go-datastore v0.4.2
-	github.com/ipfs/go-ipfs v0.4.23
+	github.com/ipfs/go-datastore v0.1.1
+	github.com/ipfs/go-ipfs v0.4.22-0.20191002225611-b15edf287df6
 	github.com/ipfs/go-ipfs-addr v0.0.1
-	github.com/ipfs/go-ipfs-cmds v0.6.0
-	github.com/ipfs/go-ipfs-config v0.12.0
-	github.com/ipfs/go-ipfs-files v0.0.8
-	github.com/ipfs/go-ipld-format v0.2.0
-	github.com/ipfs/go-log v1.0.5
-	github.com/ipfs/go-merkledag v0.3.2
+	github.com/ipfs/go-ipfs-cmds v0.1.1
+	github.com/ipfs/go-ipfs-config v0.0.11
+	github.com/ipfs/go-ipfs-files v0.0.4
+	github.com/ipfs/go-ipld-format v0.0.2
+	github.com/ipfs/go-log v0.0.1
+	github.com/ipfs/go-merkledag v0.2.3
 	github.com/ipfs/go-metrics-interface v0.0.1
-	github.com/ipfs/go-path v0.0.9
-	github.com/ipfs/go-unixfs v0.2.4
-	github.com/ipfs/interface-go-ipfs-core v0.4.0
-	github.com/libp2p/go-libp2p-core v0.8.5
+	github.com/ipfs/go-path v0.0.7
+	github.com/ipfs/go-unixfs v0.2.1
+	github.com/ipfs/interface-go-ipfs-core v0.2.3
+	github.com/libp2p/go-libp2p-core v0.4.0
 	github.com/libp2p/go-libp2p-record v0.1.2
 	github.com/libp2p/go-msgio v0.0.6
 	github.com/mitchellh/go-homedir v1.1.0
