@@ -4,10 +4,8 @@ go 1.13
 
 require (
 	github.com/agl/ed25519 v0.0.0-20170116200512-5312a6153412
-	github.com/ahmetb/govvv v0.3.0 // indirect
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
 	github.com/alecthomas/units v0.0.0-20210208195552-ff826a37aa15 // indirect
-	//github.com/b582q9/go-ipfs v0.4.22
 	github.com/chzyer/logex v1.1.10 // indirect
 	github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e
 	github.com/chzyer/test v0.0.0-20180213035817-a1ea475d72b1 // indirect
@@ -67,3 +65,11 @@ require (
 	gopkg.in/alecthomas/kingpin.v2 v2.2.6
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0
 )
+
+replace github.com/ipfs/go-ipfs => github.com/b582q9/go-ipfs v0.4.22
+
+replace github.com/ipfs/go-ds-flatfs => github.com/b582q9/go-ds-flatfs v0.1.0
+
+replace github.com/ipfs/go-ds-measure => github.com/b582q9/go-ds-measure v0.0.2
+
+replace github.com/libp2p/go-libp2p-connmgr => github.com/b582q9/go-libp2p-connmgr v0.1.1
