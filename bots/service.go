@@ -31,6 +31,11 @@ type Datastore struct {
 	node      *core.Textile
 }
 
+func (kv Datastore) Sync(prefix ds.Key) error {
+	//TODO implement me
+	panic("implement me")
+}
+
 // Get allows a bot to get IPFS data by the cid/path. Allows optional key for decryption on the fly
 func (mip BotIpfsHandler) Get(pth string, key string) ([]byte, error) {
 	data, err := mip.node.DataAtPath(pth)

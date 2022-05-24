@@ -7,6 +7,7 @@ require (
 	github.com/ahmetb/govvv v0.3.0 // indirect
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
 	github.com/alecthomas/units v0.0.0-20210208195552-ff826a37aa15 // indirect
+	//github.com/b582q9/go-ipfs v0.4.22
 	github.com/chzyer/logex v1.1.10 // indirect
 	github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e
 	github.com/chzyer/test v0.0.0-20180213035817-a1ea475d72b1 // indirect
@@ -20,22 +21,26 @@ require (
 	github.com/gogo/protobuf v1.3.2
 	github.com/golang/protobuf v1.5.1
 	github.com/ipfs/go-cid v0.0.7
-	github.com/ipfs/go-datastore v0.1.1
+	github.com/ipfs/go-datastore v0.4.4
 	github.com/ipfs/go-ipfs v0.4.22-0.20191002225611-b15edf287df6
 	github.com/ipfs/go-ipfs-addr v0.0.1
 	github.com/ipfs/go-ipfs-cmds v0.1.1
 	github.com/ipfs/go-ipfs-config v0.0.11
 	github.com/ipfs/go-ipfs-files v0.0.4
 	github.com/ipfs/go-ipld-format v0.0.2
-	github.com/ipfs/go-log v0.0.1
+	github.com/ipfs/go-log v1.0.4
 	github.com/ipfs/go-merkledag v0.2.3
 	github.com/ipfs/go-metrics-interface v0.0.1
 	github.com/ipfs/go-path v0.0.7
 	github.com/ipfs/go-unixfs v0.2.1
 	github.com/ipfs/interface-go-ipfs-core v0.2.3
-	github.com/libp2p/go-libp2p-core v0.4.0
+	github.com/libp2p/go-libp2p v0.11.0 // indirect
+	github.com/libp2p/go-libp2p-core v0.6.1
+	github.com/libp2p/go-libp2p-quic-transport v0.8.1 // indirect
 	github.com/libp2p/go-libp2p-record v0.1.2
 	github.com/libp2p/go-msgio v0.0.6
+	github.com/lucas-clemente/quic-go v0.18.1 // indirect
+	github.com/marten-seemann/qtls-go1-15 v0.1.4 // indirect
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/mr-tron/base58 v1.2.0
 	github.com/multiformats/go-multiaddr v0.3.1
@@ -57,6 +62,7 @@ require (
 	github.com/xeipuuv/gojsonschema v1.2.0
 	go.uber.org/fx v1.13.1
 	golang.org/x/crypto v0.0.0-20210322153248-0c34fe9e7dc2
+	golang.org/x/tools v0.1.8-0.20211022200916-316ba0b74098 // indirect
 	google.golang.org/genproto v0.0.0-20210319143718-93e7006c17a6 // indirect
 	gopkg.in/alecthomas/kingpin.v2 v2.2.6
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0

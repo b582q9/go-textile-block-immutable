@@ -1023,13 +1023,16 @@ func setLogLevels(repoPath string, level *pb.LogLevel, disk bool, color bool) (i
 	logger.SetBackend(backendFile)
 
 	var format string
+	var ansiGray = "\033[0;37m"
+	var ansiBlue = "\033[0;34m"
 	if color {
-		format = logging.LogFormats["color"]
+		format = ansiGray + "%{time:15:04:05.000} %{color}%{level:5.5s} " + ansiBlue +
+			"%{module:10.10s}: %{color:reset}%{message} " + ansiGray + "%{shortfile}%{color:reset}"
 	} else {
-		format = logging.LogFormats["nocolor"]
+		format = "%{time:2006-01-02 15:04:05.000000} %{level} %{module} %{shortfile}: %{message}"
 	}
 	logger.SetFormatter(logger.MustStringFormatter(format))
-	logging.SetAllLoggers(logger.ERROR)
+	logging.SetAllLoggers(logging.LevelError)
 
 	var err error
 	for key, value := range level.Systems {

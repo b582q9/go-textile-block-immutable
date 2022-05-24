@@ -79,7 +79,7 @@ func printSplash() {
 	if err != nil {
 		log.Fatalf("get peer id failed: %s", err)
 	}
-	fmt.Println(Grey("go-textile version: " + common.GitSummary))
+	fmt.Println(Grey("go-textile-sapien version: " + common.GitSummary))
 	fmt.Println(Grey("Repo version: ") + Grey(repo.Repover))
 	fmt.Println(Grey("Repo path: ") + Grey(node.RepoPath()))
 	fmt.Println(Grey("API address: ") + Grey(api.Host.Addr()))
