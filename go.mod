@@ -4,7 +4,6 @@ go 1.13
 
 require (
 	github.com/agl/ed25519 v0.0.0-20170116200512-5312a6153412
-	github.com/ahmetb/govvv v0.3.0 // indirect
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
 	github.com/alecthomas/units v0.0.0-20210208195552-ff826a37aa15 // indirect
 	github.com/chzyer/logex v1.1.10 // indirect
@@ -16,7 +15,7 @@ require (
 	github.com/fatih/color v1.10.0
 	github.com/gin-contrib/location v0.0.2
 	github.com/gin-contrib/size v0.0.0-20200916080119-37b334d93b20
-	github.com/gin-gonic/gin v1.6.3
+	github.com/gin-gonic/gin v1.7.7
 	github.com/gogo/protobuf v1.3.2
 	github.com/golang/protobuf v1.5.1
 	github.com/ipfs/go-cid v0.0.7
